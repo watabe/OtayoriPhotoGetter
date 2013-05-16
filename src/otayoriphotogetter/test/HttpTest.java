@@ -4,8 +4,6 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.apache.xpath.operations.String;
-
 import com.gargoylesoftware.htmlunit.Page;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
@@ -33,7 +31,7 @@ public class HttpTest
 
 		Page mainPage = submitImageButton.click();
 
-		HtmlPage samplePage = webClient.getPage( "https://otayori-docomo.com/EditPhotographDetail.html?frameID=518&contentID=20121215_0000001209" );
+		HtmlPage samplePage = webClient.getPage( "https://otayori-docomo.com/EditPhotographDetail.html?frameID=518&contentID=20130113_0000001230" );
 		HtmlImageInput downloadImageButton = samplePage.getBody().getElementById( "form_downloadButton" );
 
 		Page download = downloadImageButton.click();
